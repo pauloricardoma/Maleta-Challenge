@@ -1,6 +1,6 @@
 <h1 algin='center'>Projeto desafio React Maleta-Challenge</h1>
 
-  <p>Projeto de um frontend para listagem de Obras, podendo adicionar novas e apagarasjá existentes ou criadas.</p>
+  <p>Projeto de um frontend para listagem de Obras, podendo adicionar novas e apagar as já existentes ou criadas.</p>
 
 
 <h3>Mais informações</h3>
