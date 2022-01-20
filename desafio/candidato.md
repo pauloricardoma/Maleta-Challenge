@@ -10,3 +10,5 @@
 #### O frontend foi desenvolvido todo em ReactJS, usando de styled components para estilização, usando react-router-dom, foi criado a rota a aplicação para simulação real, a primeira listagem das Obras é carregada diretamente da API, após para simular uso real, as próximas Obras adicionadas serão salvas em localStorage para sempre carregar de onde parou, adicionando ou apagando as Obras existentes. Para iniciar o frontend é necessário abrir um novo terminal no diretório da aplicação (Maleta-Challenge/src/), e sem parar o da API, executar o comando:
 
 `yarn start`
+
+#### o frontend vai rodar em 'http://localhost:3000/listaobras' simulando uma rota específica de listagem
