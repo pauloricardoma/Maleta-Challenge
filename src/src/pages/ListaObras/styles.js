@@ -36,6 +36,31 @@ export const Search = styled.div`
   button {
     max-width: 172px;
   }
+
+  @media (max-width:724px) {
+    flex-direction: column;
+    height: 100%;
+
+    .input-nome-obra {
+      width: 100%;
+    }
+
+    .input-cidade {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .input-estado {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    button {
+      align-self: flex-end;
+      margin-top: 8px;
+      height: 44px;
+    }
+  }
 `;
 
 export const Section = styled.section`
@@ -69,7 +94,7 @@ export const Card = styled.div`
     justify-content: end;
     align-items: center;
 
-    button {
+    .obra-ask-delete {
       background: transparent;
       border: none;
 
@@ -79,10 +104,37 @@ export const Card = styled.div`
         color: ${({ theme }) => theme.colors.grey.dark};
       }
     }
+
+    .obra-delete {
+      display: none;
+    }
+
+    .delete-button {
+      background: transparent;
+      border: none;
+      display: block;
+
+      svg {
+        height: 28px;
+        width: 28px;
+        color: red;
+      }
+    }
   }
 
   span {
     width: 100%;
     max-width: 150px;
+  }
+
+  @media (max-width:724px) {
+    flex-direction: column;
+    height: 102px;
+
+    .card-fim {
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+    }
   }
 `;

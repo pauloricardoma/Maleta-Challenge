@@ -42,7 +42,7 @@ export default function ListaObras() {
 
     const deleteObra = e.currentTarget.nextSibling;
 
-    deleteObra.setAttribute('display', 'block');
+    deleteObra.classList.toggle('delete-button');
     e.currentTarget.remove();
   }
 
@@ -125,18 +125,18 @@ export default function ListaObras() {
                 <span>{obra.estado}</span>
                 <button
                   type="button"
-                  className="obra-delete"
+                  className="obra-ask-delete"
                   onClick={handleAskDeleteObra}
                 >
                   <FaRegTrashAlt />
                 </button>
-                <FaRegTrashAlt
-                  size={28}
-                  display="none"
-                  color="red"
-                  cursor="pointer"
+                <button
+                  type="button"
+                  className="obra-delete"
                   onClick={(e) => handleDeleteObra(e, obra.obraNome)}
-                />
+                >
+                  <FaRegTrashAlt />
+                </button>
               </div>
             </Card>
           ))}
